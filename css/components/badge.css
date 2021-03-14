@@ -21,3 +21,14 @@
   top: -25px;
   right: -75px;
 }
+
+.badge-3 {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  top: -25px;
+  right: -125px;
+}
