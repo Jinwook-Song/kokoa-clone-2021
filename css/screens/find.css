@@ -101,3 +101,23 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1.5);
+    color: rgba(255, 0, 0, 0.7);
+  }
+  50% {
+    transform: scale(0.5);
+    color: white;
+  }
+  100% {
+    transform: scale(1.5);
+    color: rgba(255, 0, 0, 0.7);
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s ease-in-out infinite;
+}
